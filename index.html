@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de solicitud laboral</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin-top: 30px;
+      color: #333;
+    }
+    form {
+      margin: 20px auto;
+      width: 300px;
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #mensaje {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #555;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+    .nota {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+
+  <!-- Script Popunder Adsterra -->
+  <script src="https://pl27063671.profitablecpmratenetwork.com/fe/58/90/fe589080704e000278b225a673b084d7.js"></script>
+</head>
+<body>
+
+  <h1>Formulario de solicitud laboral</h1>
+
+  <form id="formulario">
+    <label>Nombre completo</label>
+    <input type="text" required>
+
+    <label>Ciudad / Provincia</label>
+    <input type="text" required>
+
+    <label>Edad</label>
+    <input type="number" required>
+
+    <label>Teléfono o correo electrónico</label>
+    <input type="text" required>
+
+    <label>Nivel de estudios</label>
+    <input type="text" required>
+
+    <label>Experiencia laboral</label>
+    <textarea rows="3"></textarea>
+
+    <label>Disponibilidad inmediata</label>
+    <select>
+      <option>Sí</option>
+      <option>No</option>
+    </select>
+
+    <button type="button" onclick="procesar()">ENVIAR</button>
+  </form>
+
+  <div id="mensaje"></div>
+
+  <!-- Nota de seriedad -->
+  <div class="nota">
+    Nota: Después de recibir sus respuestas, se le responderá en un plazo de 24 a 48 horas.
+  </div>
+
+  <!-- Native Banner Adsterra -->
+  <script async="async" data-cfasync="false" src="https://pl27063584.profitablecpmratenetwork.com/97ad49e098d6e0b1cc7d9cdf9181f4de/invoke.js"></script>
+  <div id="container-97ad49e098d6e0b1cc7d9cdf9181f4de"></div>
+
+  <footer>
+    © 2026 – Portal de empleo
+  </footer>
+
+  <script>
+    function procesar() {
+      let segundos = 5;
+      document.getElementById("mensaje").innerHTML = "Procesando su solicitud... (" + segundos + "s)";
+      let intervalo = setInterval(function() {
+        segundos--;
+        document.getElementById("mensaje").innerHTML = "Procesando su solicitud... (" + segundos + "s)";
+        if (segundos <= 0) {
+          clearInterval(intervalo);
+          document.getElementById("mensaje").innerHTML = "Solicitud enviada correctamente.";
+        }
+      }, 1000);
+    }
+  </script>
+
+</body>
+</html>
